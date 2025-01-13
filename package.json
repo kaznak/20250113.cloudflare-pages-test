@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+    "build:html": "cp ./src/index.html ./dist/index.html",
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "build": "npm run build:html && npm run build:css"
   },
   "keywords": [],
   "author": "",
