@@ -5,7 +5,8 @@
   "scripts": {
     "build:html": "mkdir -p ./dist && cp ./src/index.html ./dist/index.html",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "build": "npm run build:html && npm run build:css"
+    "build": "npm run build:html && npm run build:css",
+    "dev": "http-server dist -p 8080"
   },
   "keywords": [],
   "author": "",
